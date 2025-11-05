@@ -1,0 +1,6 @@
+*** FTP Server Details***
+
+Host :- 162.55.25.67
+username :- fusion@bongoserial.in
+password:- OracleSFTP@123
+PORT 21

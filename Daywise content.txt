@@ -1,0 +1,12 @@
+1....Could you please share the topic names of Technical Full Stack (8:30 batch)
+16 oct ->  Introduction to fusion 
+17 oct ->  Fusion arch and User creation
+21 oct ->  Add roles to fusion users 
+
+
+2...And also CES Technical batch
+15 oct - Documentation and usage in Fusion
+16 oct = More working On security 
+17 oct - Introduction to BI Reports
+20 oct -BI Reports  basic reporting and  Documentation
+21 oct  Bi Reports RTF and excel documents

@@ -1,0 +1,126 @@
+{
+ "FullName":""
+}
+
+https://design.integration.eu-frankfurt-1.ocp.oraclecloud.com/?integrationInstance=oic3playground-frnpqfj5mupk-fr/ic/api/integration/v1/flows/rest/CSC_BASIC_EXAMPLE/1.0/fullName/Nageswara/sarma
+
+
+https://oic3playground-frnpqfj5mupk-fr.integration.eu-frankfurt-1.ocp.oraclecloud.com/ic/api/integration/v1/flows/rest/CSC_BASIC_EXAMPLE/1.0/fullName/{fname}/{lname}
+
+https://design.integration.eu-frankfurt-1.ocp.oraclecloud.com/ic/api/integration/v1/flows/rest/CSC_BASIC_EXAMPLE/1.0/fullName/Nageswara/sarma
+
+
+String getHello(String name)
+{
+    return " Hello "+ name;
+}
+
+wsdl
+
+Type
+message
+Porttype
+Binding
+service
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions 
+    name="HelloService"
+    targetNamespace="http://example.com/hello"
+    xmlns:tns="http://example.com/hello"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://example.com/hello">
+            <xsd:element name="getHelloRequest">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="name" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name="getHelloResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="greeting" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </wsdl:types>
+
+    <wsdl:message name="getHelloRequest">
+        <wsdl:part name="parameters" element="tns:getHelloRequest"/>
+    </wsdl:message>
+
+    <wsdl:message name="getHelloResponse">
+        <wsdl:part name="parameters" element="tns:getHelloResponse"/>
+    </wsdl:message>
+
+    <wsdl:portType name="HelloPortType">
+        <wsdl:operation name="getHello">
+            <wsdl:input message="tns:getHelloRequest"/>
+            <wsdl:output message="tns:getHelloResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="HelloBinding" type="tns:HelloPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getHello">
+            <soap:operation soapAction="http://example.com/hello/getHello"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="HelloService">
+        <wsdl:port name="HelloPort" binding="tns:HelloBinding">
+            <soap:address location="http://localhost:8080/HelloService"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</definitions>
+
+
+
+https://exsp-dev18.ds-fa.oraclepdemos.com/fscmService/ServiceCatalogService?WSDL
+
+https://<servername>/fscmService/RecInvoiceService?WSDL. 
+
+https://exsp-dev18.ds-fa.oraclepdemos.com/fscmService/TransactionPaymentTermsService?WSDL
+
+
+
+https://exsp-dev18.ds-fa.oraclepdemos.com/fndAppCoreServices/ServiceCatalogService?wsdl
+
+
+https://exsp-dev18.ds-fa.oraclepdemos.com:443/fscmService/ServiceCatalogService
+
+
+https://exsp-dev18.ds-fa.oraclepdemos.com/hcmPayCore/hcmPayCoreService?wsdl
+
+
+
+Rest Services
+
+
+
+
+https://exsp-dev18.ds-fa.oraclepdemos.com/fscmRestApi/resources/11.13.18.05/cashBanks
+
+https://exsp-dev18.ds-fa.oraclepdemos.com/
+
+https://exsp-dev18.ds-fa.oraclepdemos.com/
+https://exsp-dev18.ds-fa.oraclepdemos.com/
+https://exsp-dev18.ds-fa.oraclepdemos.com/
+https://exsp-dev18.ds-fa.oraclepdemos.com/
+
+
